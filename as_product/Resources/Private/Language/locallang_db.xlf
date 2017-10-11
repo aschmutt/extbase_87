@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-10-10T23:46:33Z" product-name="as_product">
+		<header/>
+		<body>
+			<trans-unit id="tx_as_product_domain_model_pi1">
+				<source>AS Product</source>
+			</trans-unit>
+			<trans-unit id="tx_as_product_domain_model_pi1.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product">
+				<source>Product</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.artikelnummer">
+				<source>Artikelnummer</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.serie">
+				<source>Serie</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.bezeichnung">
+				<source>Bezeichnung</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.laenge">
+				<source>Laenge</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.breite">
+				<source>Breite</source>
+			</trans-unit>
+			<trans-unit id="tx_asproduct_domain_model_product.hoehe">
+				<source>Hoehe</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
