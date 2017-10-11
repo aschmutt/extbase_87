@@ -43,7 +43,6 @@ trans.t3d
 #     Grunt     #
 #################
 node_modules/
-projekt1/fileadmin/templates/grunt/node_modules/
 grunt/grunt/node_modules/*
 grunt/process/*
 grunt/output/*
