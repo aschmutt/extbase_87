@@ -6,7 +6,7 @@ $boot = function () {
         'Schmutt.as_product',
         'Pi1',
         [
-            'Product' => 'list'
+            'Product' => 'list, show'
         ],
         // non-cacheable actions
         [

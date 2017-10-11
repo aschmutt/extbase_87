@@ -18,9 +18,9 @@
 
 			<f:for each="{products}" as="product">
 				<tr>
-					<td><f:link.action action="show" arguments="{product : product}"> {product.artikelnummer}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{product : product}"> {product.serie}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{product : product}"> {product.bezeichnung}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{product : product.uid}"> {product.artikelnummer}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{product : product.uid}"> {product.serie}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{product : product.uid}"> {product.bezeichnung}</f:link.action></td>
 				</tr>
 			</f:for>
 		</table>

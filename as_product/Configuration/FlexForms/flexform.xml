@@ -15,7 +15,7 @@
                             <items>
                                 <numIndex index="1">
                                     <numIndex index="0">List</numIndex>
-                                    <numIndex index="1">Product->list;</numIndex>
+                                    <numIndex index="1">Product->list;Product->show;</numIndex>
                                 </numIndex>
                             </items>
                         </config>

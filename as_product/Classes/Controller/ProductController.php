@@ -27,6 +27,7 @@ namespace Schmutt\AsProduct\Controller;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use Schmutt\AsProduct\Domain\Model\Product;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
@@ -53,6 +54,14 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         DebuggerUtility::var_dump($products);
 		$this->view->assign('products', $products);
 	}
+
+    /**
+     * @param Product $product
+     */
+    public function showAction(Product $product) {
+
+        $this->view->assign('product', $product);
+    }
 
 
 }
