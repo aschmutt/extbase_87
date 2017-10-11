@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'AS Product',
-    'description' => '',
+    'title' => 'Products',
+    'description' => 'This is a Extbase Example Extension for 8.7',
     'category' => 'fe',
     'author' => '',
     'author_email' => '',
