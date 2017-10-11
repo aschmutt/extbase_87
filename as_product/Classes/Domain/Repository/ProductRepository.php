@@ -26,10 +26,30 @@ namespace Schmutt\AsProduct\Domain\Repository;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Query\QueryBuilder;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * The repository for Product
  */
 class ProductRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
+    public function listProducts() {
+        /**@var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
+            ->getQueryBuilderForTable('tx_asproduct_domain_model_product');
+
+        $result = $queryBuilder
+            ->select('*')
+            ->from('tx_asproduct_domain_model_product')
+            ->where(
+                $queryBuilder->expr()->gte('uid', 0)
+            )
+            ->execute()
+            ->fetchAll();
+
+        return $result;
+    }
 }

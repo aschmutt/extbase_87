@@ -49,7 +49,7 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function listAction() {
 	    DebuggerUtility::var_dump("listAction");
-		$products = $this->productRepository->findAll();
+		$products = $this->productRepository->listProducts();
         DebuggerUtility::var_dump($products);
 		$this->view->assign('products', $products);
 	}
